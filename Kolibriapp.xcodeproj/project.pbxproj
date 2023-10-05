@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B03527C2ACDB5CF00F6F9A1 /* ThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03527B2ACDB5CF00F6F9A1 /* ThreadViewModel.swift */; };
+		5B19B73D2AA1BA4A0057E2B1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19B73C2AA1BA4A0057E2B1 /* TabBar.swift */; };
+		5B19B73F2AA1BFA90057E2B1 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19B73E2AA1BFA90057E2B1 /* TabBarModel.swift */; };
+		5B19B7422AA1CEE40057E2B1 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19B7412AA1CEE40057E2B1 /* CommentView.swift */; };
+		5B213E672AA8CD880000055F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B213E662AA8CD880000055F /* ProfileView.swift */; };
+		5B213E6A2AA8D91B0000055F /* ProfileButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B213E692AA8D91B0000055F /* ProfileButtonModel.swift */; };
+		5B35D4FB2ABF2039006923FE /* UIextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D4FA2ABF2039006923FE /* UIextension.swift */; };
+		5B4AA7932ACC53950043E237 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA7922ACC53950043E237 /* User.swift */; };
+		5B4AA7952ACC54B40043E237 /* ThreadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA7942ACC54B40043E237 /* ThreadModel.swift */; };
+		5B4AA7972ACC57250043E237 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B4AA7962ACC57250043E237 /* GoogleService-Info.plist */; };
+		5B4AA79A2ACC58340043E237 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5B4AA7992ACC58340043E237 /* FirebaseFirestore */; };
+		5B4AA79C2ACC58340043E237 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B4AA79B2ACC58340043E237 /* FirebaseFirestoreSwift */; };
+		5B4AA7A02ACC5A290043E237 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA79F2ACC5A290043E237 /* UserViewModel.swift */; };
+		5B4AA7A32ACC669E0043E237 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5B4AA7A22ACC669E0043E237 /* SDWebImageSwiftUI */; };
+		5B550D0D2ACF0D52002320CC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B550D0C2ACF0D52002320CC /* ProfileViewModel.swift */; };
+		5B7E00512AA0CC1C00F0F7D3 /* KolibriappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E00502AA0CC1C00F0F7D3 /* KolibriappApp.swift */; };
+		5B7E00552AA0CC1D00F0F7D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E00542AA0CC1D00F0F7D3 /* Assets.xcassets */; };
+		5B7E00582AA0CC1D00F0F7D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E00572AA0CC1D00F0F7D3 /* Preview Assets.xcassets */; };
+		5B8E44CF2ACEF972001513CC /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E44CE2ACEF972001513CC /* ThreadCell.swift */; };
+		5B8E44D12ACEFDC3001513CC /* HeaderProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E44D02ACEFDC3001513CC /* HeaderProfile.swift */; };
+		5BF155C22AA0DC950015E2D9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BF155C02AA0DC950015E2D9 /* Roboto-Regular.ttf */; };
+		5BF155C32AA0DC950015E2D9 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BF155C12AA0DC950015E2D9 /* Roboto-Medium.ttf */; };
+		5BF155D02AA0ECDB0015E2D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF155CF2AA0ECDB0015E2D9 /* HomeView.swift */; };
+		5BFC10712ACDD75D0018FD4A /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC10702ACDD75D0018FD4A /* CommentViewModel.swift */; };
+		5BFC10732ACDD7690018FD4A /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC10722ACDD7690018FD4A /* CommentModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B03527B2ACDB5CF00F6F9A1 /* ThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadViewModel.swift; sourceTree = "<group>"; };
+		5B19B73C2AA1BA4A0057E2B1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		5B19B73E2AA1BFA90057E2B1 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		5B19B7412AA1CEE40057E2B1 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		5B213E662AA8CD880000055F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5B213E692AA8D91B0000055F /* ProfileButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonModel.swift; sourceTree = "<group>"; };
+		5B35D4FA2ABF2039006923FE /* UIextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIextension.swift; sourceTree = "<group>"; };
+		5B4AA7922ACC53950043E237 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5B4AA7942ACC54B40043E237 /* ThreadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadModel.swift; sourceTree = "<group>"; };
+		5B4AA7962ACC57250043E237 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B4AA79F2ACC5A290043E237 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		5B550D0C2ACF0D52002320CC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		5B7E004D2AA0CC1C00F0F7D3 /* Kolibriapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kolibriapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7E00502AA0CC1C00F0F7D3 /* KolibriappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KolibriappApp.swift; sourceTree = "<group>"; };
+		5B7E00542AA0CC1D00F0F7D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B7E00572AA0CC1D00F0F7D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B8E44CE2ACEF972001513CC /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
+		5B8E44D02ACEFDC3001513CC /* HeaderProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfile.swift; sourceTree = "<group>"; };
+		5BF155C02AA0DC950015E2D9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		5BF155C12AA0DC950015E2D9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		5BF155C42AA0DCD70015E2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5BF155CF2AA0ECDB0015E2D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5BFC10702ACDD75D0018FD4A /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		5BFC10722ACDD7690018FD4A /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B7E004A2AA0CC1C00F0F7D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4AA7A32ACC669E0043E237 /* SDWebImageSwiftUI in Frameworks */,
+				5B4AA79A2ACC58340043E237 /* FirebaseFirestore in Frameworks */,
+				5B4AA79C2ACC58340043E237 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B19B73B2AA1B9C30057E2B1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5B19B73C2AA1BA4A0057E2B1 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5B4AA79D2ACC59050043E237 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B35D4FA2ABF2039006923FE /* UIextension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5B4AA79E2ACC5A170043E237 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B4AA79F2ACC5A290043E237 /* UserViewModel.swift */,
+				5B03527B2ACDB5CF00F6F9A1 /* ThreadViewModel.swift */,
+				5BFC10702ACDD75D0018FD4A /* CommentViewModel.swift */,
+				5B550D0C2ACF0D52002320CC /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B7E00442AA0CC1C00F0F7D3 = {
+			isa = PBXGroup;
+			children = (
+				5B7E004F2AA0CC1C00F0F7D3 /* Kolibriapp */,
+				5B7E004E2AA0CC1C00F0F7D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B7E004E2AA0CC1C00F0F7D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E004D2AA0CC1C00F0F7D3 /* Kolibriapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B7E004F2AA0CC1C00F0F7D3 /* Kolibriapp */ = {
+			isa = PBXGroup;
+			children = (
+				5BF155C42AA0DCD70015E2D9 /* Info.plist */,
+				5B7E00602AA0CCAA00F0F7D3 /* App */,
+				5B7E005F2AA0CCA300F0F7D3 /* Core */,
+				5B4AA79D2ACC59050043E237 /* Utils */,
+				5B4AA7962ACC57250043E237 /* GoogleService-Info.plist */,
+				5B7E00542AA0CC1D00F0F7D3 /* Assets.xcassets */,
+				5B7E00622AA0CD3600F0F7D3 /* Font */,
+				5B7E00562AA0CC1D00F0F7D3 /* Preview Content */,
+			);
+			path = Kolibriapp;
+			sourceTree = "<group>";
+		};
+		5B7E00562AA0CC1D00F0F7D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E00572AA0CC1D00F0F7D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B7E005F2AA0CCA300F0F7D3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5B4AA79E2ACC5A170043E237 /* ViewModel */,
+				5B7E00612AA0CD0D00F0F7D3 /* Model */,
+				5B19B73B2AA1B9C30057E2B1 /* TabBar */,
+				5BF155BC2AA0D6540015E2D9 /* Homepage */,
+				5BF155BD2AA0D66C0015E2D9 /* Profile */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5B7E00602AA0CCAA00F0F7D3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E00502AA0CC1C00F0F7D3 /* KolibriappApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5B7E00612AA0CD0D00F0F7D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B19B73E2AA1BFA90057E2B1 /* TabBarModel.swift */,
+				5B4AA7922ACC53950043E237 /* User.swift */,
+				5B4AA7942ACC54B40043E237 /* ThreadModel.swift */,
+				5BFC10722ACDD7690018FD4A /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B7E00622AA0CD3600F0F7D3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5BF155C12AA0DC950015E2D9 /* Roboto-Medium.ttf */,
+				5BF155C02AA0DC950015E2D9 /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		5BF155BC2AA0D6540015E2D9 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				5BF155BE2AA0D6820015E2D9 /* View */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		5BF155BD2AA0D66C0015E2D9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5BF155BF2AA0D6890015E2D9 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5BF155BE2AA0D6820015E2D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B19B7412AA1CEE40057E2B1 /* CommentView.swift */,
+				5BF155CF2AA0ECDB0015E2D9 /* HomeView.swift */,
+				5B8E44CE2ACEF972001513CC /* ThreadCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BF155BF2AA0D6890015E2D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B213E662AA8CD880000055F /* ProfileView.swift */,
+				5B213E692AA8D91B0000055F /* ProfileButtonModel.swift */,
+				5B8E44D02ACEFDC3001513CC /* HeaderProfile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B7E004C2AA0CC1C00F0F7D3 /* Kolibriapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7E005B2AA0CC1D00F0F7D3 /* Build configuration list for PBXNativeTarget "Kolibriapp" */;
+			buildPhases = (
+				5B7E00492AA0CC1C00F0F7D3 /* Sources */,
+				5B7E004A2AA0CC1C00F0F7D3 /* Frameworks */,
+				5B7E004B2AA0CC1C00F0F7D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kolibriapp;
+			packageProductDependencies = (
+				5B4AA7992ACC58340043E237 /* FirebaseFirestore */,
+				5B4AA79B2ACC58340043E237 /* FirebaseFirestoreSwift */,
+				5B4AA7A22ACC669E0043E237 /* SDWebImageSwiftUI */,
+			);
+			productName = Kolibriapp;
+			productReference = 5B7E004D2AA0CC1C00F0F7D3 /* Kolibriapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B7E00452AA0CC1C00F0F7D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5B7E004C2AA0CC1C00F0F7D3 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B7E00482AA0CC1C00F0F7D3 /* Build configuration list for PBXProject "Kolibriapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B7E00442AA0CC1C00F0F7D3;
+			packageReferences = (
+				5B4AA7982ACC58340043E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5B4AA7A12ACC669E0043E237 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 5B7E004E2AA0CC1C00F0F7D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B7E004C2AA0CC1C00F0F7D3 /* Kolibriapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B7E004B2AA0CC1C00F0F7D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF155C32AA0DC950015E2D9 /* Roboto-Medium.ttf in Resources */,
+				5BF155C22AA0DC950015E2D9 /* Roboto-Regular.ttf in Resources */,
+				5B4AA7972ACC57250043E237 /* GoogleService-Info.plist in Resources */,
+				5B7E00582AA0CC1D00F0F7D3 /* Preview Assets.xcassets in Resources */,
+				5B7E00552AA0CC1D00F0F7D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B7E00492AA0CC1C00F0F7D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19B73D2AA1BA4A0057E2B1 /* TabBar.swift in Sources */,
+				5B4AA7A02ACC5A290043E237 /* UserViewModel.swift in Sources */,
+				5B213E6A2AA8D91B0000055F /* ProfileButtonModel.swift in Sources */,
+				5BFC10712ACDD75D0018FD4A /* CommentViewModel.swift in Sources */,
+				5B7E00512AA0CC1C00F0F7D3 /* KolibriappApp.swift in Sources */,
+				5BF155D02AA0ECDB0015E2D9 /* HomeView.swift in Sources */,
+				5B19B7422AA1CEE40057E2B1 /* CommentView.swift in Sources */,
+				5B4AA7932ACC53950043E237 /* User.swift in Sources */,
+				5B8E44D12ACEFDC3001513CC /* HeaderProfile.swift in Sources */,
+				5B03527C2ACDB5CF00F6F9A1 /* ThreadViewModel.swift in Sources */,
+				5B213E672AA8CD880000055F /* ProfileView.swift in Sources */,
+				5B4AA7952ACC54B40043E237 /* ThreadModel.swift in Sources */,
+				5BFC10732ACDD7690018FD4A /* CommentModel.swift in Sources */,
+				5B550D0D2ACF0D52002320CC /* ProfileViewModel.swift in Sources */,
+				5B8E44CF2ACEF972001513CC /* ThreadCell.swift in Sources */,
+				5B19B73F2AA1BFA90057E2B1 /* TabBarModel.swift in Sources */,
+				5B35D4FB2ABF2039006923FE /* UIextension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5B7E00592AA0CC1D00F0F7D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B7E005A2AA0CC1D00F0F7D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B7E005C2AA0CC1D00F0F7D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kolibriapp/Preview Content\"";
+				DEVELOPMENT_TEAM = B4V55756ZL;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Kolibriapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.septianto.Kolibriapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5B7E005D2AA0CC1D00F0F7D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kolibriapp/Preview Content\"";
+				DEVELOPMENT_TEAM = B4V55756ZL;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Kolibriapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.septianto.Kolibriapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B7E00482AA0CC1C00F0F7D3 /* Build configuration list for PBXProject "Kolibriapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7E00592AA0CC1D00F0F7D3 /* Debug */,
+				5B7E005A2AA0CC1D00F0F7D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7E005B2AA0CC1D00F0F7D3 /* Build configuration list for PBXNativeTarget "Kolibriapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7E005C2AA0CC1D00F0F7D3 /* Debug */,
+				5B7E005D2AA0CC1D00F0F7D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B4AA7982ACC58340043E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		5B4AA7A12ACC669E0043E237 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B4AA7992ACC58340043E237 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B4AA7982ACC58340043E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5B4AA79B2ACC58340043E237 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B4AA7982ACC58340043E237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		5B4AA7A22ACC669E0043E237 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B4AA7A12ACC669E0043E237 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5B7E00452AA0CC1C00F0F7D3 /* Project object */;
+}
